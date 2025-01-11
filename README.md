@@ -2,7 +2,10 @@
 
 An AI-powered application designed to summarize YouTube video transcripts efficiently. Whether you're a student, researcher, or just curious, save time and get concise summaries of video scripts with this tool. 🚀
 
+---
+
 ![ ](images/interface.jpg)
+
 ---
 
 ## 🌟 Features
@@ -22,6 +25,13 @@ An AI-powered application designed to summarize YouTube video transcripts effici
 
 ---
 
+## 🧪 Technical Details
+ - **Chunking Strategy**: Ensures that each chunk adheres to the token limit of the summarization model (max_length=1024).
+ - **Transformer Model**: Utilizes the distilbart-cnn-12-6 model, pre-trained on the CNN/DailyMail dataset for summarizing long-form text.
+ - **Error Handling**: Manages potential errors during transcript fetching or summarization to ensure smooth performance.
+
+---
+
 ## 🛠️ Technologies Used
 - **Python**: Core programming language.
 - **Hugging Face Transformers**: For state-of-the-art text summarization.
@@ -38,10 +48,10 @@ An AI-powered application designed to summarize YouTube video transcripts effici
   pip install -r requirements.txt
   ```
 ### Dependencies:
- - transformers
- - gradio
- - youtube-transcript-api
- - torch
+ - **transformers**
+ - **gradio**
+ - **youtube-transcript-api**
+ - **torch**
   
 ## 🚀 Usage
 1. Clone the repository:
@@ -58,11 +68,6 @@ pip install -r requirements.txt
 python app.py
 ```
 Open the local Gradio interface in your browser and paste a YouTube video URL to get the summarized transcript.
-
-## 🧪 Technical Details
- - Chunking Strategy: Ensures that each chunk adheres to the token limit of the summarization model (max_length=1024).
- - Transformer Model: Utilizes the distilbart-cnn-12-6 model, pre-trained on the CNN/DailyMail dataset for summarizing long-form text.
- - Error Handling: Manages potential errors during transcript fetching or summarization to ensure smooth performance.
 
 ## Acknowledgements
  - Hugging Face team for their amazing pre-trained models and pipelines.
