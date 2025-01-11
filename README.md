@@ -64,19 +64,10 @@ Open the local Gradio interface in your browser and paste a YouTube video URL to
  - Transformer Model: Utilizes the distilbart-cnn-12-6 model, pre-trained on the CNN/DailyMail dataset for summarizing long-form text.
  - Error Handling: Manages potential errors during transcript fetching or summarization to ensure smooth performance.
 
+## Acknowledgements
+ - Hugging Face team for their amazing pre-trained models and pipelines.
+ - Gradio for providing a simple yet powerful interface framework.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Contact
+For any questions or feedback, feel free to reach out:
+ - Email: svankalas1@gmail.com
